@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C8C8C8"
+    android:splitMotionEvents="false"
+    tools:context="com.example.dummy.Play" >
+
+    <Button
+        android:id="@+id/timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:background="@layout/button_border"
+        android:clickable="false"
+        android:text="00:00:000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/give_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@layout/button_border"
+        android:text="Give up" />
+
+    <Button
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@layout/button_border"
+        android:text="Restart" />
+
+    <!-- first -->
+
+    <TextView
+        android:id="@+id/testing1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/give_up"
+        android:layout_alignRight="@+id/give_up"
+        android:layout_marginBottom="28dp"
+        android:background="@layout/empty_circle" />
+    
+     <!-- second -->
+     
+    
+    <TextView
+        android:id="@+id/testing3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/timer"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/testing1"
+        android:background="@layout/empty_circle" />
+
+    <!-- third -->
+
+    <TextView
+        android:id="@+id/testing2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/timer"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/testing3"
+        android:background="@layout/empty_circle" />
+
+    <!-- last -->
+
+    <TextView
+        android:id="@+id/testing"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@id/restart"
+        android:layout_marginBottom="28dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/testing2"
+        android:background="@layout/empty_circle" />
+
+   
+
+    
+
+</RelativeLayout>

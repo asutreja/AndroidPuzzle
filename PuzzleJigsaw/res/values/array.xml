@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="diff_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+
+    </string-array>
+
+    <string-array name="diff_level">
+        <item>difficulty level 1</item>
+        <item>difficulty level 2</item>
+        <item>difficulty level 3</item>
+
+    </string-array>
+</resources>
